@@ -6,23 +6,49 @@
 
     <title>Ankle Deep Games</title>
 
+    <link rel="icon" href="images/AnkleDeepGamesLogo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <header class="site-header">
+      <svg
+        class="sign-chain"
+        viewBox="0 0 120 46"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <circle cx="60" cy="8" r="6" class="chain-nail" />
+        <path d="M60 12 L18 34" class="chain-link" />
+        <path d="M60 12 L102 34" class="chain-link" />
+        <circle cx="18" cy="34" r="4" class="chain-ring" />
+        <circle cx="102" cy="34" r="4" class="chain-ring" />
+      </svg>
+
       <img
         class="company-logo"
         src="images/AnkleDeepGamesLogo.png"
         alt="Ankle Deep Games"
       />
+
+      <p class="tagline">Tabletop adventures, brewed for friends.</p>
     </header>
+
+    <div class="wave-divider" aria-hidden="true"></div>
 
     <main>
       <h1>Our Games</h1>
 
       <section class="games">
-        <article class="game-card">
+        <article class="game-card card--tavern">
           <div class="game-image-container">
             <img src="images/MysticTavernLogo.png" alt="Mystic Tavern" />
           </div>
@@ -35,17 +61,17 @@
           </p>
 
           <div class="game-details">
-            <span><strong>Players:</strong> 4</span>
-            <span>
-              <strong>Chill Factor:</strong>
+            <span class="pill"><strong>Players</strong> 4</span>
+            <span class="pill">
+              <strong>Chill Factor</strong>
               <span class="chill-factor chill">😌 Chill</span>
             </span>
           </div>
 
-          <p class="coming-soon">Coming Soon!</p>
+          <p class="coming-soon">Coming Soon</p>
         </article>
 
-        <article class="game-card">
+        <article class="game-card card--exile">
           <div class="game-image-container">
             <img src="images/ExileLogo.png" alt="EXiLE" />
           </div>
@@ -58,20 +84,20 @@
           </p>
 
           <div class="game-details">
-            <span><strong>Players:</strong> 2–8</span>
-            <span>
-              <strong>Chill Factor:</strong>
+            <span class="pill"><strong>Players</strong> 2–8</span>
+            <span class="pill">
+              <strong>Chill Factor</strong>
               <span class="chill-factor mayhem">😱 Mayhem</span>
             </span>
           </div>
 
-          <p class="coming-soon">Coming Soon!</p>
+          <p class="coming-soon">Coming Soon</p>
         </article>
       </section>
     </main>
 
     <footer>
-      <p>&copy; 2026 Ankle Deep Games</p>
+      <p>🎲 &copy; 2026 Ankle Deep Games &mdash; gather your party</p>
     </footer>
   </body>
 </html>
