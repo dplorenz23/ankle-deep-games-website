@@ -27,7 +27,12 @@ body {
 
   background-color: var(--bg);
   background-image:
-    radial-gradient(circle at 50% 0%, #223342 0%, var(--bg) 46%, var(--bg-deep) 100%),
+    radial-gradient(
+      circle at 50% 0%,
+      #223342 0%,
+      var(--bg) 46%,
+      var(--bg-deep) 100%
+    ),
     repeating-linear-gradient(
       0deg,
       rgb(190 210 230 / 4%) 0px,
@@ -140,7 +145,12 @@ h1 {
   font-weight: 700;
   letter-spacing: 0.04em;
 
-  background: linear-gradient(120deg, var(--lava-deep), var(--gold) 55%, var(--plum));
+  background: linear-gradient(
+    120deg,
+    var(--lava-deep),
+    var(--gold) 55%,
+    var(--plum)
+  );
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -333,7 +343,8 @@ h1 {
 }
 
 @keyframes pulse-dot {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
     transform: scale(1);
   }
@@ -345,36 +356,45 @@ h1 {
 }
 
 .play-button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
   margin: 0 20px 26px;
-  padding: 8px 24px;
+  padding: 10px 24px;
 
-  background: rgb(148 167 183 / 18%);
-  border: 1px solid rgb(148 167 183 / 60%);
-  border-radius: 999px;
+  background: var(--accent-b);
+  border: 1px solid var(--accent-b);
+  border-radius: 8px;
 
-  font-size: 1.05rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   text-decoration: none;
 
-  color: #dce7ef;
+  color: #111;
 
-  box-shadow: inset 0 1px 0 rgb(255 255 255 / 8%);
+  box-shadow:
+    0 0 24px -4px var(--accent-b),
+    0 8px 18px rgb(0 0 0 / 35%);
 
   cursor: pointer;
+
   transition:
-    background 0.15s ease,
-    border-color 0.15s ease,
-    transform 0.15s ease;
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    filter 0.15s ease;
 }
 
 .play-button:hover {
-  background: rgb(148 167 183 / 28%);
-  border-color: rgb(148 167 183 / 85%);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+
+  box-shadow:
+    0 0 30px -2px var(--accent-b),
+    0 10px 22px rgb(0 0 0 / 40%);
 }
 
 footer {
