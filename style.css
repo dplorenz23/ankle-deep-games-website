@@ -344,6 +344,39 @@ h1 {
   }
 }
 
+.play-button {
+  display: inline-block;
+
+  margin: 0 20px 26px;
+  padding: 8px 24px;
+
+  background: rgb(148 167 183 / 18%);
+  border: 1px solid rgb(148 167 183 / 60%);
+  border-radius: 999px;
+
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: #dce7ef;
+
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 8%);
+
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.play-button:hover {
+  background: rgb(148 167 183 / 28%);
+  border-color: rgb(148 167 183 / 85%);
+  transform: translateY(-1px);
+}
+
 footer {
   padding: 44px 20px 30px;
 
