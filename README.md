@@ -1,4 +1,7 @@
-# ankle-deep-games-website
-Website for Ankle Deep Games
+# Ankle Deep Games
 
-#mystictavern #dobby
+[Website](https://ankledeepgames.com/)
+
+[Mystic Tavern GitHub Repo](https://github.com/ankle-deep-games/mystic-tavern)
+
+[EXiLE GitHub Repo](https://github.com/ankle-deep-games/exile)
