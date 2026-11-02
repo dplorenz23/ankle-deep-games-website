@@ -16,7 +16,6 @@
   --lava-deep: #b8402c;
   --plum: #9575d1;
   --plum-deep: #6a4c93;
-  --wave: #58a9e6;
   --chill: #5cbb84;
   --mayhem: #e2604a;
 }
@@ -61,30 +60,7 @@ body {
   flex-direction: column;
   align-items: center;
 
-  padding: 8px 20px 6px;
-}
-
-.sign-chain {
-  width: 90px;
-  height: 34px;
-  margin-bottom: -6px;
-}
-
-.chain-nail {
-  fill: var(--ink-soft);
-}
-
-.chain-link {
-  fill: none;
-  stroke: var(--ink-soft);
-  stroke-width: 2.5;
-  stroke-linecap: round;
-}
-
-.chain-ring {
-  fill: var(--bg);
-  stroke: var(--ink-soft);
-  stroke-width: 2.5;
+  padding: 24px 20px 6px;
 }
 
 .company-logo {
@@ -105,30 +81,6 @@ body {
     0 16px 30px rgb(0 0 0 / 45%);
 }
 
-.tagline {
-  margin: 18px 0 0;
-
-  font-family: "Cinzel", serif;
-  font-size: clamp(0.95rem, 2vw, 1.15rem);
-  font-weight: 500;
-  font-style: italic;
-  letter-spacing: 0.02em;
-
-  color: var(--ink-soft);
-}
-
-.wave-divider {
-  height: 22px;
-  margin: 22px auto 8px;
-
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='22' viewBox='0 0 60 22'%3E%3Cpath d='M0 11 Q 15 0 30 11 T 60 11' fill='none' stroke='%2358a9e6' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
-  background-repeat: repeat-x;
-  background-position: center;
-  background-size: 60px 22px;
-
-  opacity: 0.6;
-}
-
 /* ---------- main ---------- */
 
 main {
@@ -137,7 +89,7 @@ main {
 }
 
 h1 {
-  margin: 8px 0 34px;
+  margin: 32px 0 34px;
 
   text-align: center;
   font-family: "Cinzel", serif;
@@ -177,11 +129,6 @@ h1 {
   box-shadow:
     0 14px 30px rgb(0 0 0 / 35%),
     inset 0 1px 0 rgb(255 255 255 / 6%);
-
-  transition:
-    transform 200ms ease,
-    box-shadow 200ms ease,
-    border-color 200ms ease;
 }
 
 .game-card::before {
@@ -202,16 +149,6 @@ h1 {
 .card--exile {
   --accent-a: var(--lava-deep);
   --accent-b: #ef8a3d;
-}
-
-.game-card:hover {
-  transform: translateY(-8px);
-
-  border-color: rgb(255 255 255 / 16%);
-
-  box-shadow:
-    0 24px 44px rgb(0 0 0 / 50%),
-    inset 0 1px 0 rgb(255 255 255 / 8%);
 }
 
 .game-image-container {
@@ -407,6 +344,11 @@ footer {
   color: var(--ink-soft);
 }
 
+footer a {
+  color: var(--gold-soft);
+  text-underline-offset: 0.2em;
+}
+
 @media (max-width: 750px) {
   .site-header {
     padding-top: 18px;
@@ -414,11 +356,6 @@ footer {
 
   .company-logo {
     width: min(190px, 62vw);
-  }
-
-  .sign-chain {
-    width: 74px;
-    height: 28px;
   }
 
   h1 {
