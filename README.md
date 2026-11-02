@@ -1,3 +1,7 @@
 # Ankle Deep Games
 
-[Website](https://ankle-deep-games.github.io/) · [Mystic Tavern](https://github.com/ankle-deep-games/mystic-tavern) · [EXiLE](https://github.com/ankle-deep-games/exile)
+[Website](https://ankledeepgames.com/)
+
+[Mystic Tavern GitHub Repo](https://github.com/ankle-deep-games/mystic-tavern)
+
+[EXiLE GitHub Repo](https://github.com/ankle-deep-games/exile)
